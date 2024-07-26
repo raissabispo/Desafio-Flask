@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/views/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Lista de Alunos</h1>
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>CPF</th>
+            <th>Matrícula</th>
+            <th>Ano</th>
+            <th>Turma</th>
+            
+        </tr>
+        {% for alun in aluno %}
+        <tr>
+            <td>{{ alun.id }}</td>
+            <td>{{ alun.name }}</td>
+            <td>{{ alun.cpf }}</td>
+            <td>{{ alun.matricula}}</td>
+            <td>{{ alun.ano}}</td>
+            <td>{{ alun.turma}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
+
+<style>
+    body {
+        background-color: lightblue;
+       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: center;
+    }
+
+    a {
+        color: #3498db; 
+        text-decoration: none; 
+        font-weight: bold; 
+        padding: 10px 15px;
+        border: 2px solid #3498db; 
+        border-radius: 5px; 
+        transition: all 0.3s ease;
+    }
+
+    a:hover {
+        color: #fff; 
+        background-color: #3498db; 
+        border-color: #2980b9; 
+    }
+    table {
+        margin: 0 auto; /* Centraliza horizontalmente */
+        border-collapse: collapse; /* Remove espaçamentos internos */
+    }
+    table, th, td {
+        border: 1px solid black; /* Adiciona borda à tabela e células */
+    }
+    th, td {
+        padding: 10px; /* Adiciona espaçamento interno nas células */
+        text-align: center; /* Centraliza o texto nas células */
+    }
+</style>
+
+
