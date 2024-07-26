@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/views/style.css">
+    <title>Consulta por Matrícula</title>
+</head>
+<body>
+    <h1>Consultar Aluno por Matrícula</h1>
+    <form action="/consulta_matricula" method="post">
+        <label for="matricula">Digite o número da matrícula:</label>
+        <input type="text" id="matricula" name="matricula" required>
+        <button type="submit">Consultar</button>
+    </form>
+    <br>
+    <a href="/">Voltar para a página inicial</a>
+</body>
+</html>
+<style>
+    body {
+        background-color: lightblue;
+       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: center;
+    }
+
+    button,a {
+        color: #3498db; 
+        text-decoration: none; 
+        font-weight: bold; 
+        padding: 10px 15px;
+        border: 2px solid #3498db; 
+        border-radius: 5px; 
+        transition: all 0.3s ease;
+    }
+
+    a:hover {
+        color: #fff; 
+        background-color: #3498db; 
+        border-color: #2980b9; 
+    }
+
+   
+    
+    
+</style>
+

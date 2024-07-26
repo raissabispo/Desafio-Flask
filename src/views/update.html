@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/views/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="POST">
+        <p>Nome <input type="text" name="nome" value="{{ aluno.nome }}" /></p>
+        <p>CPF <input type="text" name="cpf" value="{{ aluno.cpf }}" /></p>
+        <p>Matricula <input type="text" name="matricula" value="{{ aluno.matricula}}" /></p>
+        <p>Ano<input type="number" name="ano" value="{{ aluno.ano}}" /></p>
+        <p>Turma<input type="text" name="turma" value="{{ aluno.turma}}" /></p>
+        <p><input type="submit" value="Enviar" /></p>
+        </form>
+    
+        <a href="/">Voltar para a página inicial</a>
+</body>
+</html>
+
+<style>
+    body {
+        background-color: lightblue;
+       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: center;
+    }
+
+    a {
+        color: #3498db; 
+        text-decoration: none; 
+        font-weight: bold; 
+        padding: 10px 15px;
+        border: 2px solid #3498db; 
+        border-radius: 5px; 
+        transition: all 0.3s ease;
+    }
+
+    a:hover {
+        color: #fff; 
+        background-color: #3498db; 
+        border-color: #2980b9; 
+    }
+    
+</style>
+
