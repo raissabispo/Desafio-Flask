@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>Cadastrar novo aluno</h1>
     <form action='' method="POST">
         <p>Nome <input type="text" name="name" /></p>
         <p>CPF <input type="integer" name="cpf" /></p>
@@ -23,8 +24,18 @@
 <style>
     body {
         background-color: lightblue;
-       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+    
+    h1, p, h2, a {
+        margin: 10px 0;
     }
 
     #Submit,a {
